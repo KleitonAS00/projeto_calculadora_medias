@@ -30,14 +30,15 @@ h2 {
 
 form {
     margin-top: 0px;
-    padding: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input, button {
-    display: block;
     padding: 8px;
     width: 50%;
-    margin: auto;
     margin-bottom: 8px;
 }
 
@@ -50,4 +51,22 @@ button {
 
 button:hover {
     background-color: rgb(73, 44, 240);
+}
+
+.success-message {
+    color: green;
+    text-align: center;
+    font-weight: bolder;
+    display: none;
+}
+
+.error-message {
+    padding: 1px;
+    color: red;
+    margin-bottom: 8px;
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+    display: none;
 }
